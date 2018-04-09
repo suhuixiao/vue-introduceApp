@@ -1,3 +1,17 @@
+登录账号/密码:
+
+123456/123
+
+
+地址:
+
+https://suhuixiao.github.io/introduceApp-Preview/#/ (在pc端浏览器打开需要切换为手机调试模式登录事件才生效)
+
+
+二维码:
+
+![Image text](https://github.com/suhuixiao/introduceApp-Preview/blob/master/static/img/QR-code.jpg)
+
 # introduce
 
 > A Vue.js project
