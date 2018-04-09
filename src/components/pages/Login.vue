@@ -38,13 +38,13 @@
 					'X-LC-Key': 't0yFSrjXrXhRhpcikKi6kTSx'}
 				};
 				api.login(optins, config).then(res => {
-				  	this.Com.$toast('登录成功', 1500)
+					this.$store.dispatch('ACTIONS_SHOW_TOAST', {content: '登录成功', time: 1500})
 					let userData = {username: this.username, password: this.password};
 					localStorage.setItem('key', res.data.sessionToken)
 					localStorage.setItem('userData', JSON.stringify(userData))
 
-					this.$store.commit('getUserTelephone', res.data.mobilePhoneNumber)
-					this.$store.commit('getUserMailbox', res.data.email)
+					this.$store.commit('SET_TELEPHONE', res.data.mobilePhoneNumber)
+					this.$store.commit('SET_MAILBOX', res.data.email)
 					// 判断地址是否有redirect参数
 				  	if(this.$route.query.redirect){
 				  		// 有参数，则跳转到该页面
@@ -53,7 +53,7 @@
 				  		this.$router.push({name: 'Index', params: {title: '首页'}})
 				  	}
 				}).catch(err => {
-				  	this.Com.$toast('登录失败', 1500)
+					this.$store.dispatch('ACTIONS_SHOW_TOAST', {content: '登录失败', time: 1500})
 				})
 			}
 		},

@@ -12,7 +12,7 @@
 			<div class="footer__div--icon iconfont icon-gongzuojingyan"></div>
 			<div class="footer__div--text">工作</div>
 		</v-touch>
-		<v-touch class="footer__div" @tap="linkUrl='MasterSkills'" :class="{active: linkUrl==='ProjectExperences'}">
+		<v-touch class="footer__div" @tap="linkUrl='MasterSkills'" :class="{active: linkUrl==='MasterSkills'}">
 			<div class="footer__div--icon iconfont icon-xiangmu1"></div>
 			<div class="footer__div--text">技能</div>
 		</v-touch>

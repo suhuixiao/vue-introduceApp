@@ -1,5 +1,5 @@
 <template>
-	<div class="index" v-show="isShow">
+	<div class="index">
 		<app-header>
 			<span slot="title">项目</span>
 		</app-header>
@@ -60,7 +60,6 @@ export default{
 			systemData: [{name: '医行后台管理系统', explain: '技术栈：gulp + jquery + bootstrap', isShow: false}, {name: '云老师布置作业后台', explain: '技术栈：gulp + jquery + bootstrap', isShow: false}, {name: 'CRM后台系统', explain: '技术栈：gulp + jquery + bootstrap', isShow: false}],
 			// 桌面应用
 			desktopData: [{name: '远大学云（随堂测）', url: 'http://www.k12stc.com/', explain: '技术栈：grunt + coffeescript + jquery + go + nwjs</br>官方地址：http://www.k12stc.com/' , isShow: false}],
-			isShow: false,
 			swiperOption: {
 				// 自动播放
 				autoplay: 2500,
@@ -77,11 +76,11 @@ export default{
 			this.$router.push({name: 'PicDetail', params: {title: '详情查看', otherName: name}})
 		}
 	},
-	beforeCreate() {
-
+	mounted () {
+		this.$store.commit('HIDE_LOADING')
 	},
-	mounted() {
-		this.isShow = true
+	beforeCreate() {
+		this.$store.commit('SHOW_LOADING')
 	},
 }
 </script>

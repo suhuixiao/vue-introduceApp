@@ -3,6 +3,8 @@
         <!-- <app-header></app-header> -->
         <router-view></router-view>
         <bottom-bar></bottom-bar>  
+        <my-loading></my-loading>
+        <my-toast></my-toast>
     </div>
 </template>
 

@@ -91,7 +91,7 @@ export default {
 		position: relative;
 		text-align: center;
 		padding-top: 0.7rem;
-		font-size: 0.3rem;
+		font-size: 0.45rem;
 		color: #FFF;
 		.div__user--pic{
 			width: 2.2rem;
