@@ -5,10 +5,10 @@
 
 地址:
 
-https://suhuixiao.github.io/introduceApp-Preview/#/
+https://suhuixiao.github.io/introduceApp-Preview/#/ (在pc端浏览器打开需要切换为手机调试模式登录事件才生效)
 
 
-在线二维码:
+二维码:
 
 ![Image text](https://github.com/suhuixiao/introduceApp-Preview/blob/master/static/img/QR-code.jpg)
 
