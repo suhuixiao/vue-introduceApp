@@ -85,6 +85,7 @@
 <style lang="scss">
 	.footer{
 		display: flex;
+		display: -webkit-flex;
 		position: fixed;
 		height: 1.4rem;
 		z-index: 2;
@@ -92,12 +93,12 @@
 		width: 100%;
 		bottom: 0;
 		border-top: 1px solid #ccc;
-		padding: 0.1rem;
+		padding: 0.1rem 0 0.2rem 0;
 		.footer__div{
 		    flex: 1;
-		    display: flex;
-		    flex-direction: column;
+		    -webkit-flex: 1;
 		    justify-content: center;
+		    -webkit-justify-content: center;
 		    text-align: center;
 			.iconfont {
 			    font-size: 0.8rem;

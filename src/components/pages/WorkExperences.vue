@@ -37,6 +37,7 @@ export default {
 	}
 	.container--title{
 		display: flex;
+		display: -webkit-flex;
 		height: 0.8rem;
 		align-itens: center;
 		border-bottom: 1px solid #666;
@@ -45,7 +46,9 @@ export default {
 		}
 		.iconfont:nth-child(2){
 			display: flex;
-			align-items: center
+			display: -webkit-flex;
+			align-items: center;
+			-webkit-align-items: center;
 		}
 	}
 	.work--container{

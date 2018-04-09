@@ -5,7 +5,7 @@
 		</app-header>
 		<swiper class="pic-swipter-div" :options="picSwiperOption" ref="picSwiper">
 			<swiper-slide v-for="(item,index) in appPics" class="pic__div" :key="item">
-				<img :src="item" alt="">
+				<img :src="item" alt="" @load="picLoad">
 			</swiper-slide>
  			<!-- <div class="swiper-pagination"  slot="pagination"></div> -->
 		    <div class="swiper-button-prev" slot="button-prev"></div>
@@ -31,6 +31,11 @@ export default {
 			xiaoxueyunPics: ['static/img/xiaoxueyun/1.jpg', 'static/img/xiaoxueyun/2.jpg', 'static/img/xiaoxueyun/3.jpg', 'static/img/xiaoxueyun/4.jpg'],
 		}
 	},
+	methods: {
+		picLoad () {
+			this.$store.commit('HIDE_LOADING')
+		}
+	},
 	mounted() {
 		switch(this.$route.params.otherName) {
 			case 'yixing':
@@ -50,6 +55,9 @@ export default {
 				this.appPics = this.xiaoxueyunPics;
 				break;
 		}
+	},
+	beforeCreate () {
+		this.$store.commit('SHOW_LOADING')
 	}
 }
 </script>

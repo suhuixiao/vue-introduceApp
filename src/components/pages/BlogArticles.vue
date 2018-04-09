@@ -149,6 +149,7 @@ export default {
 	}
 	.blog-articles--title{
 		display: flex;
+		display: -webkit-flex;
 		text-align: center;
 		background: #FFF;
 		&>.active{
@@ -157,6 +158,7 @@ export default {
 		}
 		.blog-articles__tab{
 		    flex: 1;
+		    -webkit-flex: 1;
 			height: 1.5rem;
 			line-height: 1.5rem;
 		}
@@ -177,6 +179,7 @@ export default {
 	}
 	.article__container{
 	    display: flex;
+	    display: -webkit-flex;
 		padding: 0.4rem;
 		border-top: 1px solid #ccc;
 		.article__img{

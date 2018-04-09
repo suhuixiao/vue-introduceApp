@@ -117,10 +117,13 @@ export default {
 		padding: 0 0.3rem;
 		border-bottom: 1px solid #ccc;
 		display: flex;
+		display: -webkit-flex;
 	}
 	.content__item--left{
 	    flex: 1;
+	    -webkit-flex: 1;
 	    display: flex;
+	    display: -webkit-flex;
 		font-size: 0.5rem;
 		.iconfont{
 			font-size: 0.9rem;
@@ -131,6 +134,7 @@ export default {
 	}
 	.content__item--right{
 	    flex: 1;
+	    -webkit-flex: 1;
 		text-align: right;
 		font-size: 0.5rem;
 		color: #30ab1b;

@@ -18,9 +18,14 @@ export default {
 }
 </script>
 <style lang="scss">
+	.master-skills{
+		height: 100%;
+	}
 	.skill-container{
 		margin-top: 0.3rem;
 		background: #FFF;
+		height: calc(100% - 3.4rem);
+		overflow: auto;
 		div{
 			border-bottom: 1px solid #b5afaf;
 			line-height: 1rem;

@@ -29,6 +29,7 @@ export default{
         bottom: 0; 
         left: 50%;  
         transform: translate(-50%, 0);  
+        -webkit-transform: translate(-50%, 0);  
         margin-bottom: 2rem;  
         background: #000000;  
         line-height: 0.7rem;  

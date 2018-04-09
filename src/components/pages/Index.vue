@@ -121,6 +121,7 @@ export default{
 	}
 	.app--container{
 		display: flex;
+		display: -webkit-flex;
 		flex-flow: wrap;
 		text-align: center;
 		.app--each{
@@ -138,16 +139,20 @@ export default{
 	}
 	.system--each{
 		display: flex;
+		display: -webkit-flex;
 		align-items: center;
+		-webkit-align-items: center;
 		padding: 0 0.5rem;
 		height: 1.2rem;
 		font-size: 0.5rem;
 		border-bottom: 1px solid #ccc;
 		.system--text{
-			flex: 6
+			flex: 6;
+			-webkit-flex: 6;
 		}
 		.iconfont{
 			flex: 6;
+			-webkit-flex: 6;
 			font-size: 0.3rem;
 			text-align: right;
 			color: #55ca7a;
