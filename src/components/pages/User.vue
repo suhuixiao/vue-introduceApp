@@ -5,7 +5,7 @@
 			<img class="background__img" src="static/img/bg.jpg" alt="">
 			<div class="background__div">
 				<div class="div__user--pic"><img src="static/img/boy.png" alt=""></div>
-				<div class="div__user--name">苏建辉</div>
+				<div class="div__user--name">猪猪</div>
 				<div class="div__user--phone">电话：{{$store.state.user.telephone}}</div>
 			</div>
 		</div>
@@ -22,14 +22,14 @@
 					<div class="iconfont icon-shijian"></div>
 					<div class="left--text">出生年月</div>
 				</div>
-				<div class="content__item--right">1995-07</div>
+				<div class="content__item--right">19XX-07</div>
 			</v-touch>
 			<v-touch class="content__item">
 				<div class="content__item--left">
 					<div class="iconfont icon-drxx18"></div>
 					<div class="left--text">毕业院校</div>
 				</div>
-				<div class="content__item--right">广州大学</div>
+				<div class="content__item--right">XX大学</div>
 			</v-touch>
 			<v-touch class="content__item">
 				<div class="content__item--left">
@@ -43,14 +43,14 @@
 					<div class="iconfont icon-juminjuzhudilunkuo"></div>
 					<div class="left--text">居住地</div>
 				</div>
-				<div class="content__item--right">广州天河区</div>
+				<div class="content__item--right">冰岛</div>
 			</v-touch>
 			<v-touch class="content__item">
 				<div class="content__item--left">
 					<div class="iconfont icon-34"></div>
 					<div class="left--text">户籍</div>
 				</div>
-				<div class="content__item--right">湛江</div>
+				<div class="content__item--right">冰岛</div>
 			</v-touch>
 		</div>
 	</div>
